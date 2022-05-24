@@ -38,5 +38,15 @@
   <include ref="../../DetFCCeeECalInclined/compact/FCCee_ECalBarrel.xml" />
   <include ref="../../DetFCCeeHCalTile/compact/FCCee_HCalBarrel_TileCal.xml" />
 
+  <include ref="${DD4hepINSTALL}/DDDetectors/compact/detector_types.xml"/>
 
+  <plugins>
+    <plugin name="DD4hepVolumeManager"/>
+    <plugin name="InstallSurfaceManager"/>
+    <plugin name="fccdet_addRecoExtensions" >
+      <argument value="ECalBarrel" />
+      <argument value="DetType_CALORIMETER + DetType_ELECTROMAGNETIC + DetType_BARREL" />
+    </plugin>
+  </plugins>
+    
 </lccdd>
