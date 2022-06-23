@@ -48,6 +48,13 @@ namespace {
 
       detector.setTypeFlag(typeFlag);
 
+      auto caloData = new dd4hep::rec::LayeredCalorimeterData;
+      caloData->layoutType = dd4hep::rec::LayeredCalorimeterData::BarrelLayout;
+      // caloData->inner_symmetry = nsides;
+      // caloData->outer_symmetry = nsides;
+
+      detector.addExtension<dd4hep::rec::LayeredCalorimeterData>(caloData);
+
     } catch ( std::exception &e) {
       printout(PrintLevel::ERROR, LOG_SOURCE, "Detector not found exception");
     }

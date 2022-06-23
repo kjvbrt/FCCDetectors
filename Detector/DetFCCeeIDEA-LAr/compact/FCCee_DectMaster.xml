@@ -38,7 +38,7 @@
   <include ref="../../DetFCCeeIDEA/compact/Vertex.xml"/>
   <include ref="../../DetFCCeeIDEA/compact/DriftChamber.xml"/>
   <include ref="../../DetFCCeeECalInclined/compact/FCCee_ECalBarrel.xml" />
-  <include ref="../../DetFCCeeHCalTile/compact/FCCee_HCalBarrel_TileCal.xml" />
+  <!-- <include ref="../../DetFCCeeHCalTile/compact/FCCee_HCalBarrel_TileCal.xml" /> -->
 
   <include ref="${DD4hepINSTALL}/DDDetectors/compact/detector_types.xml"/>
 
