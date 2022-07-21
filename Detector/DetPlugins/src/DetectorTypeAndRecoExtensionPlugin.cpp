@@ -57,6 +57,7 @@ namespace {
 
     } catch ( std::exception &e) {
       printout(PrintLevel::ERROR, LOG_SOURCE, "Detector not found exception");
+      printout(PrintLevel::ERROR, LOG_SOURCE, e.what());
     }
 
     return 1;
